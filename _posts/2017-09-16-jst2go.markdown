@@ -2,6 +2,12 @@
 layout: post
 title:  "Jst2Go"
 date:   2017-09-16 11:02:56 -0800
-categories: software
+categories: business software
+
+images:
+
+  - url: /assets/images/jst2go.png
+    alt: Jst2Go
+    title: Jst2Go
 ---
 Developing a small business courier service in our college town.
