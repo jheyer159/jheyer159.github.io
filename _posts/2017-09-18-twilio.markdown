@@ -10,4 +10,4 @@ images:
     alt: Message
     title: Message
 ---
-A web applicated used to communicate with large lists of people.
+A web application used to communicate with large lists of people.
