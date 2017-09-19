@@ -14,10 +14,15 @@
     .project {
         background:#f1f1f1;
         padding: 0.5em;
+
+        img {
+            /*height: 150px;*/
+        }
     }
     .projects div[class^="col"] {
         padding-left: 0;
     }
+
 }
 
 .secondary div{
