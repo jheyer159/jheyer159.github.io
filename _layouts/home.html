@@ -11,8 +11,8 @@ layout: default
             <div class="row projects">
                 <h3>Projects</h3>
                     {% for post in site.posts %}
-                        <div class="col-sm-4">
-                            <div class="project">
+                        <div class="col-sm-4 project">
+                            <div class="content">
                                 <a href="{{ post.url }}">{{ post.title }}</a>
                                 {{ post.excerpt }}
                                 {% assign image = post.images[0] %}
@@ -23,17 +23,46 @@ layout: default
             </div>
         </div>
         <div class="secondary col-md-4" >
-            <div>
+            <div class="content">
                 <h3>Skills</h3>
-                <p>Test</p>
-                <p>Test</p>
-                <p>Test</p>
-                <p>Test</p>
-                <p>Test</p>
-                <p>Test</p>
-                <p>Test</p>
-                <p>Test</p>
-                <p>Test</p>
+                <p class="intro">
+                    Skills developed from years of tinkering with computers and electronics.</p>
+                
+                <div class="skillset">
+                    
+                    <div class="item">
+                        <h5 class="level-title">Javascript and ES6+<span class="level-label">Expert</span></h5>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" style="width: 92%;">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h5 class="level-title">HTML5, CSS3, SVG<span class="level-label">Expert</span></h5>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" style="width: 94%;">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h5 class="level-title">Linux &amp; MERN Stack<span class="level-label">Pro</span></h5>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="83%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+                    <div class="item">
+                            <h5 class="level-title"><a href="http://www.ratatype.com/u585891/">Typing Speed</a><span class="level-label">88 WPM</span></h5>
+                            <div class="level-bar">
+                                <div class="level-bar-inner" data-level="98%">
+                                </div>                                      
+                            </div><!--//level-bar-->                                 
+                        </div><!--//item-->
+                </div>              
+            </div><!--//content-->  
+
             </div>
         </div>
     </div>

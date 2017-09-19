@@ -3,6 +3,8 @@
 }
 
 .primary {
+    padding-bottom: 2em;
+
     h3 {
         margin-bottom: 1em;
     }
@@ -15,18 +17,39 @@
         background:#f1f1f1;
         padding: 0.5em;
 
-        img {
-            /*height: 150px;*/
+        p {
+            height: 4em;
         }
     }
+    /*
     .projects div[class^="col"] {
         padding-left: 0;
-    }
+    }*/
 
 }
 
-.secondary div{
-    padding: 0.5em 2em;
-    background:#FFFFFF;
-    /*height: 300px;*/
+.secondary {
+    padding-bottom: 2em;
+
+    > div{
+        padding: 0.5em 2em;
+        background:#FFFFFF;
+        /*height: 300px;*/
+    }
+
+    .level-bar {
+        height: 15px;
+        background: lightgray;
+    }
+
+    .level-bar-inner {
+        width: 92%;
+        background: hsla(146, 70%, 33%, 1);
+        height: 15px;
+    }
+
+    .level-label {
+        float: right;
+        color: hsla(0, 0%, 63%, 1);
+    }
 }
