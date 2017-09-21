@@ -3,7 +3,10 @@
 }
 
 .primary {
-    padding-bottom: 2em;
+
+    .content {
+        padding-bottom: 2em;
+    }
 
     h3 {
         margin-bottom: 1em; }
@@ -40,7 +43,9 @@
 }
 
 .secondary {
-    padding-bottom: 2em;
+    .content {
+        padding-bottom: 2em;
+    }
 
     > div{
         padding: 0.5em 2em;

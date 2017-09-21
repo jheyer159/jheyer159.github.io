@@ -4,23 +4,25 @@ layout: default
 
     <div class="row">
         <div class="primary col-md-8">
-            <div class="row">
-                <h3>About Me</h3>
-                <p>I like building thigs. Whether it's made of wood or electricity, I want to know how it works. Adaptability and resourcefulness are important to my way of life. These traits have allowed me to expand my knowledge into a variety of areas and serve as my guide through the unkown.</p>
-            </div>
-            <div class="row projects">
-                <h3>Projects</h3>
-                    {% for post in site.posts %}
-                        <div class="project">
-                            <div class="content">
-                                <a href="{{ post.url }}">{{ post.title }}</a>
-                                {{ post.excerpt }}
-                                {% assign image = post.images[0] %}
-                                {% include image.html image=image %}
+            <div class="content">
+                <div class="row">
+                    <h3>About Me</h3>
+                    <p>I like building thigs. Whether it's made of wood or electricity, I want to know how it works. Adaptability and resourcefulness are important to my way of life. These traits have allowed me to expand my knowledge into a variety of areas and serve as my guide through the unkown.</p>
+                </div><!--//row-->
+                <div class="row projects">
+                    <h3>Projects</h3>
+                        {% for post in site.posts %}
+                            <div class="project">
+                                <div class="content">
+                                    <a href="{{ post.url }}">{{ post.title }}</a>
+                                    {{ post.excerpt }}
+                                    {% assign image = post.images[0] %}
+                                    {% include image.html image=image %}
+                                </div>
                             </div>
-                        </div>
-                    {% endfor %}
-            </div>
+                        {% endfor %}
+                </div><!--//row-->
+            </div><!--//content-->
         </div>
         <div class="secondary col-md-4" >
             <div class="content">
