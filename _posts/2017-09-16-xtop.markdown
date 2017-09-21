@@ -2,12 +2,57 @@
 layout: post
 title:  "The X-Top"
 date:   2017-09-14 13:02:56 -0700
-categories: jekyll update
+categories: crafting electronics
+author: "Jeremy Heyer"
 
 images:
 
-  - url: /assets/images/xtop.jpg
+  - url: /assets/images/xtop/xtop.jpg
     alt: X-Top
     title: X-Top
 ---
-Handcrafted custom Xbox 360 portable laptop.
+#### Handcrafted custom Xbox 360 portable laptop.
+
+##### Goal: Develop a portable XBox 360 that has everything it needs (WiFi, sound, disc drive, power, screen) enclosed in an air cooled case.
+This originated from a joke about recreating [Ben Heck's project](http://www.benheck.com/xbox-360-laptop-original).
+
+![X-Top Star Wars](/assets/images/xtop/xtop.jpg)
+![X-Top Inside](/assets/images/xtop/inside.jpg)
+![X-Top Back](/assets/images/xtop/back-storm.jpg)
+
+<br>
+The first version proved to be a learning challenge about what not to do.  This one was built with whatever tools we had available, and the cheapest things we could get our hands on. I remember a lot of cold nights at the table saw in our old dank shed.  This version ultimately succumbed to the Mexican climate.
+
+![X-Top Mk1](/assets/images/xtop/xtop-engadget.jpg) 
+<span class="space"><b>X-Top Mk1: </b>Here's an article about the first version on </span>[Engadget](https://www.engadget.com/2010/03/17/student-made-xbox-360-laptop-channels-the-heck-out-of-well-y/).
+
+<br>
+The second version was a significant improvement.  The buttons were cleaner.  The screen was processed more efficiently.  And the electronics were better understood and arranged in way to facilitate air flow.  This was the design that got replicated.  I enjoyed working with the apple keyboard because the profile was so much thinner, and flat.  The keyboard didn't make it to future designs because it had marginal benefits.
+
+[![X-Top Mk2](http://img.youtube.com/vi/AvKmWHtdUWs/0.jpg)](http://www.youtube.com/watch?v=AvKmWHtdUWs)<span class="space"><b>X-Top Mk2: </b>Here's a video of the build and gameplay of Forza.</span>
+
+This was made at a time that the Raspberry Pi type computers weren't common or didn't exist.  Implementing another machine alongside this would allow you to have an actual operating system as well.  That was an idea we explored, but it wasn't something people wanted.
+
+<br>
+We eventually crafted a CNC machine to build the case components for us.  The idea was to easily produce cases and focus our attention on the electronics.  The electronic operation was no simple feat.  The hardest part to get working properly was the screen.  There are a lot of components that make video and combination audio possible.  Preserving each component and rearranging them saw many countless hours.  
+
+<div class="center">
+{% include youtubePlayer.html id='RnIvhlKT7SY' %}
+<br>
+Here's a example of a 5-Axis CNC.
+</div>
+
+<br>
+The CNC machine turned out to be more of a burden than we anticipated.  We could produce hand made items with a higher quality than the machine, so it proved to be unusable for our purposes and found a new home with architecture students.  CNC is still a topic of interest for me.
+
+I hope the individuals that received these creations still have the luxury of playing.
+
+
+![X-Top Mk 3](/assets/images/xtop/redx.jpg)
+![X-Top Storm Back](/assets/images/xtop/back-storm.jpg)
+![X-Top Storm Plugs](/assets/images/xtop/back-storm-plugs.jpg)
+
+
+
+
+
