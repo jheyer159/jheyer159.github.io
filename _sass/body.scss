@@ -4,17 +4,12 @@
 
 .primary {
 
-    .content {
-        padding-bottom: 2em;
-    }
-
     h3 {
         margin-bottom: 1em; }
 
     > div{
         padding: 0.5em 2em;
-        background: #FFFFFF;
-        /*height: 300px;*/ }
+        background: #FFFFFF;}
 
     .projects {
         
@@ -24,21 +19,21 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
+        padding-bottom: 2em;
     }
 
     .project {
         margin: 0 auto;
         width: 33.3%;
-        background:#f1f1f1;
-        padding: 0.5em;
 
         p {
             height: 4em; }
+
+        .content {
+            background:#f1f1f1;
+            margin: 0 2px;
+            padding: 0.5em; }
     }
-    /*
-    .projects div[class^="col"] {
-        padding-left: 0;
-    }*/
 
 }
 
