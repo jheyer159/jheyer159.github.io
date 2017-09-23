@@ -1,0 +1,29 @@
+.logos{
+    margin: 0 auto;
+    width: 200px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    animation: spin 7s linear infinite;
+    animation-play-state: paused;
+}
+
+.logos:hover {
+    animation-play-state: running;
+}
+
+.logo {
+    position: absolute;
+    height: 200px;
+}
+
+@keyframes spin {
+    from {
+      transform: rotateY(0deg);
+    }
+  
+    to {
+        transform: rotateY(360deg);
+    }
+  }
+
