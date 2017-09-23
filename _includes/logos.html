@@ -1,0 +1,7 @@
+<div class="logos">
+    {% assign image_files = site.static_files | where: "logo", true %}
+    {% for image in image_files %}
+        {% assign rotateY = 40 | times: forloop.index0 | append: 'deg' %}
+        <img class="logo" style="transform: rotateY( {{ rotateY }} ) translateZ( 288px );" src="{{ site.baseurl }}{{ image.path }}" alt="{{image.basename}}" />
+    {% endfor %}
+</div>

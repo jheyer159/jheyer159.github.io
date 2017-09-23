@@ -11,3 +11,99 @@ images:
     title: Jst2Go
 ---
 Developing a small business courier service in our college town.
+
+Sometime summer of 2013.  I met a friend that wanted to ride his bike and deliver to people.  A simple idea: deliver for the places that don't deliver. <b>Get paid to ride your bike.</b> A lot of people talked about it, and we did it. 
+
+I offered my help to build a website that could take an order and send a text-message to the courier because email wasn't fast enough.  I knew it was possible and it looked something like this. A form submit would activate the php like so.
+
+{% highlight PHP startinline=true %}
+mail( '1234567890@vtext.com', '', 'Please bring me Jamba Juice' );
+{% endhighlight %}
+
+This method wasn't reliable enough due to texts not coming through in a reasonable amout of time. Eventually I learned about Twilio, and changed our system to work with their API.
+
+{% highlight php%}
+<?php
+//send message using twilio
+sendsms($message, $id); 
+try {
+  $response = twilio( $messageArr );
+  if( $response == '' ){
+    $error = "ERROR: No response from twilio queue";
+    sendsms("TWILIO QUEUE SERVER DIDN'T RESPOND FOR: ",$id);
+    error_log( $error );
+  }
+  error_log( $response );
+}
+catch (Exception $e){
+ $error = "ERROR: " . $e;
+ echo $error;
+ error_log( $error ); 
+}
+?>
+{% endhighlight %}
+
+This code worked for us, until it didn't.  We ran into problems with couriers going in and out of dead zones and not receiving texts in a timely manner.  Something had to be improved for all our sanity. 
+
+Here enters NodeJS..
+
+{% highlight js %}
+const express = require('express');
+const app = express();
+
+app.listen(3000, function () {
+  console.log('Listening on port 3000!');
+})
+{% endhighlight %}
+
+From this simple implementation of a server we built an app that gave the couriers a direct connection to the orders.  At first I thought we may run into the same problems, but the only way to be sure was to build it.  The app eventually found a home with React Native.
+
+I pushed for SVG from the beginning because it gave us access to cross platforms with easy control of images.
+
+It took a lot of hard work and tireless days to create something novel. Thank you to all the loyal customers and vendors that support Jst2Go.
+
+{% include logos.html %}
+
+I enjoyed making these vectors.  The heart of the menus. Carousel created with CSS.
+
+{% highlight css %}
+
+.logos{
+    margin: 0 auto;
+    width: 200px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    animation: spin 7s linear infinite;
+    animation-play-state: paused;
+}
+
+.logos:hover {
+    animation-play-state: running;
+}
+
+.logo {
+    position: absolute;
+    height: 200px;
+}
+
+@keyframes spin {
+    from {
+      transform: rotateY(0deg);
+    }
+  
+    to {
+        transform: rotateY(360deg);
+    }
+  }
+
+{% endhighlight %}
+
+
+
+
+
+
+
+
+
