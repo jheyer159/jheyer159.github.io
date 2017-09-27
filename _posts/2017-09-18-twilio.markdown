@@ -10,4 +10,71 @@ images:
     alt: Message
     title: Message
 ---
-A web application used to communicate with large lists of people.
+A web application to communicate with lists of people and uses the latest web technologies.
+
+#### Goal:  Create a simple app that uses Twilio's API to handle many concurrent conversations.
+
+This application was built using Node.js and React, but the source wasn't designed to be open.  It's a private project but I would like to share some of the main parts.
+
+The application takes in CSV uploads of names and numbers, then allows for dialogue to happen with each number.  A broadcast message can be sent to every selected number, and the returning messages are forwarded from Twilio to the application. 
+
+CSVs can be exported with message history and lookup information.
+
+{% highlight js%}
+const fs = require("fs")
+const json2xls = require("json2xls")
+const nodeExcel = require('excel-export')
+
+module.exports = {
+    saveXLSMessages: function(data,res){
+        try {
+            var conf = {}
+            conf.cols = [{"caption": "Number"},{"caption": "Message"}, {"caption": "Errors"}]
+            conf.rows = []
+            for (let num in data){
+                if (num != "__proto__"){
+                    let cols = data[num]
+                    let row = [num]
+                    "messages" in cols ? row.push(JSON.stringify(cols.messages)) : row.push("")
+                    "msgErrors" in cols ? row.push(JSON.stringify(cols.msgErrors)) : row.push("")
+
+                    conf.rows.push(row)
+                }
+            }
+
+            //build file in memory then send to client
+            var result = nodeExcel.execute(conf);
+            res.setHeader('Content-Type', 'application/vnd.openxmlformats');
+            res.setHeader("Content-Disposition", "attachment; filename=" + "lookups.xlsx");
+            res.end(result, 'binary');
+        }
+        catch(e){
+            let error = new Date() + ": Error building XLS: " + e
+            res.status( 500 ).send( error )
+            console.error(error)
+        }
+    }
+{% endhighlight %}
+
+This demonstrates a few useful concepts.
+  - [Module exporting](http://eloquentjavascript.net/10_modules.html)
+  - [XLS creation](https://www.npmjs.com/package/json2xls)
+  - [Serving files from Express](https://nodejs.org/api/http.html#http_response_end_data_encoding_callback)
+
+Modules are something I think it's worth spending the time to think about.  They are extremely useful and can find a place in every project.
+
+XLS creation took me a while to get working with Node, Express, and files not being corrupted on the client.  The parts are simple once properly strung together and it boils down to...
+  1. Create your columns.
+  2. Populate your rows.  In my case they came from a JSON object.
+  3. Build your Excel file.
+  4. Serve it as binary to the client with proper headers so it's parsed properly.
+  5. Handle Errors.
+
+{% highlight js%}
+  res.setHeader("Content-Disposition", "attachment; filename=" + "lookups.xlsx");
+{% endhighlight %}
+
+This informs the browser that a file is to be expected and it will automatically initiate a download.  Node can send the result as a binary stream to the client.
+
+
+
