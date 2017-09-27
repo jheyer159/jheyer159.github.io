@@ -23,16 +23,30 @@
     }
 
     .project {
-        margin: 0 auto;
+        margin: 2px auto;
         width: 33.3%;
 
         p {
-            height: 4em; }
+            /* height: 4em; */}
 
         .content {
+            height: 275px;
             background:#f1f1f1;
             margin: 0 2px;
-            padding: 0.5em; }
+            padding: 0.5em; 
+            display: flex;
+            flex-flow: row wrap;
+
+            img {
+                max-height: 170px;
+                margin: auto;
+            }
+        /*
+            > * {
+                flex: 0 1 auto;
+            }
+            */
+        }
     }
 
 }
