@@ -5,6 +5,10 @@ article {
         margin-bottom: 1em;
     }
 
+    .youtube {
+        max-width: 100%;
+    }
+
     header.post-header{
         padding: 2em;
         padding-bottom: 0;    }
@@ -24,5 +28,12 @@ article {
 
     h4 {
         margin: 1em 0;
+    }
+
+    figure.highlight {
+        code {
+            white-space: inherit;
+            overflow: auto;
+        }
     }
 }
