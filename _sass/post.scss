@@ -33,7 +33,7 @@ article {
     figure.highlight {
         code {
             white-space: inherit;
-            overflow: auto;
+            overflow: scroll;
             -webkit-overflow-scrolling: touch
         }
     }
