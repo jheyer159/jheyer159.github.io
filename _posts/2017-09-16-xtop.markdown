@@ -11,7 +11,7 @@ images:
     alt: X-Top
     title: X-Top
 ---
-#### Handcrafted custom Xbox 360 portable laptop.
+Handcrafted custom Xbox 360 portable laptop with built in screen and WiFi.
 
 ##### Goal: Develop a portable XBox 360 that has everything it needs (WiFi, sound, disc drive, power, screen) enclosed in an air cooled case.
 This originated from a joke about recreating [Ben Heck's project](http://www.benheck.com/xbox-360-laptop-original).
