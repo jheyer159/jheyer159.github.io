@@ -17,7 +17,9 @@ Sometime summer of 2013.  I met a friend that wanted to ride his bike and delive
 I offered my help to build a website that could take an order and send a text-message to the courier because email wasn't fast enough.  I knew it was possible and it looked something like this. A form submit would activate the php like so.
 
 {% highlight PHP startinline=true %}
+<?php
 mail( '1234567890@vtext.com', '', 'Please bring me Jamba Juice' );
+?>
 {% endhighlight %}
 
 This method wasn't reliable enough due to texts not coming through in a reasonable amout of time. Eventually I learned about Twilio, and changed our system to work with their API.
