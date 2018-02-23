@@ -10,7 +10,7 @@ images:
     alt: Jst2Go
     title: Jst2Go
 ---
-Developing a small business courier service in our college town.
+Small business courier service we developed in our college town.
 
 Sometime summer of 2013.  I met a friend that wanted to ride his bike and deliver to people.  A simple idea: deliver for the places that don't deliver. <b>Get paid to ride your bike.</b> A lot of people talked about it, and we did it. 
 

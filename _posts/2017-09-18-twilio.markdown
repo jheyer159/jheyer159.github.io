@@ -10,7 +10,7 @@ images:
     alt: Message
     title: Message
 ---
-A web application to communicate with lists of people and uses the latest web technologies.
+Web application to communicate with lists of people using the latest web technologies.
 
 #### Goal:  Create a simple app that uses Twilio's API to handle many concurrent conversations.
 
