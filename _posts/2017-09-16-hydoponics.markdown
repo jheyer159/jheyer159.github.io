@@ -10,11 +10,11 @@ images:
     alt: Microgreens
     title: Microgreens
 ---
-An exploration into sustainable living with plants and technology.
+An exploration into sustainable living with plants and technology
 
-This has been a journey of exploration with a desire to learn about plants and self sufficiency.  Hydroponics came into my sphere of influence because of the dramatic reduction in water required to grow crops.  This comes with its caveats, but it can't be denied that hydroponics uses less water to grow a plant.
+This has been a journey of exploration with a desire to learn about plants and self sufficiency.  Hydroponics came into my sphere of influence because of the dramatic reduction in water required to grow crops.  This comes with its caveats, but it can't be denied that hydroponic systems uses less water to grow a plant.
 
-This is the beginning of the hydroponic operation.  A Raspberry Pi setup to monitor the air temp / humidity, water temp / ph, and send Infra Red signals to our AC power plugs for turning the fans and pumps on and off.
+This is the beginning of the hydroponic operation.  A Raspberry Pi set up to monitor the air temp / humidity, water temp / ph, and send infrared signals to our AC power plugs for turning the fans and pumps on and off.
 
 ![Pi Environment Monitor](/assets/images/green/IMG_1448.JPG)
 ![Lettuce NFT](/assets/images/green/IMG_1456.JPG)
@@ -54,7 +54,7 @@ Soursop, sprinkler tetrahedrons, mango orchard.
 ![Tetrahedron](/assets/images/green/IMG_2154.JPG)
 ![Mangos](/assets/images/green/IMG_2336.JPG)
 
-In the end, I learned how intricate our ecosystem is. If we work with nature then the rewards are bountiful. 
+In the end, I learned how intricate our ecosystem is and how bountiful the rewards can be.
 
 
 
