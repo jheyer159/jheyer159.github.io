@@ -12,9 +12,9 @@ images:
 ---
 An exploration into sustainable living with plants and technology.
 
-This has been a journey of exploration with a desire to learn about plants and self sufficiency.  Hydroponics came into my sphere of influence because of the dramatic reduction in water required to grow crops.  This comes with it's caveats, but it can't be denied that hydroponics uses less water to grow a plant.
+This has been a journey of exploration with a desire to learn about plants and self sufficiency.  Hydroponics came into my sphere of influence because of the dramatic reduction in water required to grow crops.  This comes with its caveats, but it can't be denied that hydroponics uses less water to grow a plant.
 
-This is the beginning of the hydroponic operation.  A Raspberry Pi was built and setup to monitor the air temp / humidity, water temp / ph, and send IR signals to our AC plugs for turning the fans and pumps on/off.
+This is the beginning of the hydroponic operation.  A Raspberry Pi setup to monitor the air temp / humidity, water temp / ph, and send Infra Red signals to our AC power plugs for turning the fans and pumps on and off.
 
 ![Pi Environment Monitor](/assets/images/green/IMG_1448.JPG)
 ![Lettuce NFT](/assets/images/green/IMG_1456.JPG)
