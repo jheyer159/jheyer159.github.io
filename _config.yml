@@ -16,7 +16,7 @@
 title: Web Guru
 email: jheyer159@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Jeremy Heyer's profile. A website showcasing my works and the skills developed.
+  Jeremy Heyer's profile. A website showcasing a sample of my work.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ""
