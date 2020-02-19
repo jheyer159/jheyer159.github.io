@@ -41,11 +41,6 @@
                 max-height: 170px;
                 margin: auto;
             }
-        /*
-            > * {
-                flex: 0 1 auto;
-            }
-            */
         }
     }
 
@@ -75,6 +70,6 @@
 
     .level-label {
         float: right;
-        color: hsla(0, 0%, 63%, 1);
+        color: rgb(71, 71, 71);
     }
 }
