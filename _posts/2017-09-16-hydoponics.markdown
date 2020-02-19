@@ -6,7 +6,7 @@ categories: plants hydroponics permaculture
 
 images:
 
-  - url: /assets/images/microgreens.jpg
+  - url: /assets/images/microgreens.webp
     alt: Microgreens
     title: Microgreens
 ---

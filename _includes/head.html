@@ -2,20 +2,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Jeremy Heyer inspired by Xiaoying Riley at 3rd Wave Media">  
-  
+    <meta name="author" content="Jeremy Heyer inspired by Xiaoying Riley at 3rd Wave Media">
+
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  
-    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+    <meta name="description"
+        content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+    <link rel="preload" href="{{ "/assets/main.css" | relative_url }}" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+    </noscript>
+    <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </noscript>
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Monda|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ "icon.ico" | relative_url }}">
     <!--<link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">-->
-  
+
     {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
     {% endif %}

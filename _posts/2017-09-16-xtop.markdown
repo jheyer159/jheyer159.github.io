@@ -7,7 +7,7 @@ author: "Jeremy Heyer"
 
 images:
 
-  - url: /assets/images/xtop/xtop.jpg
+  - url: /assets/images/xtop/xtop.webp
     alt: X-Top
     title: X-Top
 ---

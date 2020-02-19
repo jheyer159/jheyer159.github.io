@@ -6,7 +6,7 @@ categories: business software
 
 images:
 
-  - url: /assets/images/jst2go.png
+  - url: /assets/images/jst2go.webp
     alt: Jst2Go
     title: Jst2Go
 ---
